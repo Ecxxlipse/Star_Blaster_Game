@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5158897338797996469}
   - component: {fileID: 7831376859711173044}
   - component: {fileID: -9079018436035667506}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121,7 +121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3013457582306497053}
   - component: {fileID: 430589058154992369}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: spaceship_blue_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
