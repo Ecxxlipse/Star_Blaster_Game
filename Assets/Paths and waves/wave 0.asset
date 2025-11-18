@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c59b076cb8b28d047927f8957cc85e7c, type: 3}
   m_Name: wave 0
   m_EditorClassIdentifier: Assembly-CSharp::waveConfigSO
+  enemyPrefabs:
+  - {fileID: 5837076770940690094, guid: 25047b0de06a5364fad33ba195edb97b, type: 3}
+  - {fileID: 5837076770940690094, guid: 25047b0de06a5364fad33ba195edb97b, type: 3}
+  - {fileID: 5837076770940690094, guid: 25047b0de06a5364fad33ba195edb97b, type: 3}
   pathPrefab: {fileID: 5655993761735592725, guid: 3f0c4f6e311573c4abc8537472d996db, type: 3}
   enemyMoveSpeed: 5
