@@ -10,7 +10,10 @@ public class Playercontroller : MonoBehaviour
     [SerializeField] float rightBoundPadding;
     [SerializeField] float upBoundPadding;
     [SerializeField] float downBoundPadding;
+
+    Shooter playerShooter;
     InputAction moveAction;
+    InputAction fireAction;
 
     Vector3 moveVector;
     Vector2 minBounds;
@@ -18,7 +21,10 @@ public class Playercontroller : MonoBehaviour
 
     void Start()
     {
+        playerShooter = GetComponent<Shooter>();
+
         moveAction = InputSystem.actions.FindAction("Move");
+        fireAction = InputSystem.actions.FindAction("Fire");
 
         InitBounds();
 
@@ -27,6 +33,7 @@ public class Playercontroller : MonoBehaviour
     void Update()
     {
         MovePlayer();
+        FireShooter();
     }
 
     void InitBounds()
@@ -44,5 +51,10 @@ public class Playercontroller : MonoBehaviour
         newPos.y = Math.Clamp(newPos.y, minBounds.y + downBoundPadding, maxBounds.y - upBoundPadding);
 
         transform.position = newPos;
+    }
+
+    void FireShooter()
+    {
+        playerShooter.isFiring = fireAction.IsPressed();
     }
 }

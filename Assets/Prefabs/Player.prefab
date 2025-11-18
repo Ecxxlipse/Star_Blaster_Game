@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5158897338797996469}
   - component: {fileID: 7831376859711173044}
   - component: {fileID: -9079018436035667506}
+  - component: {fileID: -9065333035053018969}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -111,6 +112,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
   health: 50
+--- !u!114 &-9065333035053018969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943059859056285936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afc128083d84e894bb6d6a79dcfd3e7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Shooter
+  projectilePrefab: {fileID: 5144190055346104853, guid: 4fde98ce3b6f1f34f9646cf430d68fde, type: 3}
+  projectileSpeed: 10
+  projectileLifetime: 5
+  fireRate: 0.2
+  isFiring: 0
 --- !u!1 &2550341005915157605
 GameObject:
   m_ObjectHideFlags: 0
@@ -137,7 +155,7 @@ Transform:
   m_GameObject: {fileID: 2550341005915157605}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.21, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
